@@ -1,1 +1,85 @@
+1. Install Git
+Ensure Git is installed on your system. You can check by running:
 
+sh
+Copy
+Edit
+git --version
+If Git is not installed, download and install it from git-scm.com.
+
+2. Configure Git (First-Time Setup)
+Set your username and email:
+
+sh
+Copy
+Edit
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+3. Create a New Local Repository
+Navigate to your project folder or create a new one:
+
+sh
+Copy
+Edit
+mkdir my-project
+cd my-project
+Then initialize the repository:
+
+sh
+Copy
+Edit
+git init
+This creates a .git directory inside your project, marking it as a Git repository.
+
+4. Add Files to the Repository
+Add files to be tracked by Git:
+
+sh
+Copy
+Edit
+git add .
+This stages all changes for commit.
+
+5. Commit Changes
+Save the changes to the repository:
+
+sh
+Copy
+Edit
+git commit -m "Initial commit"
+6. Create a Remote Repository on GitHub (or GitLab, Bitbucket, etc.)
+Go to GitHub and create a new repository.
+Copy the repository URL.
+7. Link Local Repository to Remote
+Add the remote repository URL:
+
+sh
+Copy
+Edit
+git remote add origin https://github.com/your-username/your-repo.git
+Verify the remote:
+
+sh
+Copy
+Edit
+git remote -v
+8. Push Your Code to GitHub
+Upload your local commits to the remote repository:
+
+sh
+Copy
+Edit
+git push -u origin main
+If using master instead of main, use:
+
+sh
+Copy
+Edit
+git push -u origin master
+9. Clone an Existing Repository (Optional)
+If you want to clone an existing repository, use:
+
+sh
+Copy
+Edit
+git clone https://github.com/username/repository.git
