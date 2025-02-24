@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-gray-900 text-white p-5 flex flex-col">
+            <h2 class="text-lg font-semibold mb-6">Dashboard</h2>
+            <nav class="flex-1">
+                <ul>
+                    
+                    <li class="mb-3"><a href="02.html" class="flex items-center px-4 py-2 bg-teal-500 text-white rounded">📊 Overview</a></li>
+                    <li class="mb-3"><a href="04.html" class="flex items-center px-4 py-2 hover:bg-gray-800 rounded">💰 Balances</a></li>
+                    <li class="mb-3"><a href="06.html" class="flex items-center px-4 py-2 hover:bg-gray-800 rounded">🔄 Transactions</a></li>
+                    <li class="mb-3"><a href="07.html" class="flex items-center px-4 py-2 hover:bg-gray-800 rounded">📝 Bills</a></li>
+                    <li class="mb-3"><a href="08.html" class="flex items-center px-4 py-2 hover:bg-gray-800 rounded">💸 Expenses</a></li>
+                    <li class="mb-3"><a href="09.html" class="flex items-center px-4 py-2 hover:bg-gray-800 rounded">🎯 Goals</a></li>
+                    <li class="mb-3"><a href="10.html" class="flex items-center px-4 py-2 hover:bg-gray-800 rounded">⚙️ Settings</a></li>
+                </ul>
+            </nav>
+            <button class="mt-auto flex items-center px-4 py-2 text-left w-full bg-red-600 rounded">🚪 Logout</button>
+            <br>
+            <a href="11.html"><button class="mt-auto flex items-center px-4 py-2 text-left w-full bg-red-600 rounded">🚪 Profile</button></a>
+   
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-semibold">Settings</h1>
+                <input type="text" placeholder="Search here" class="px-4 py-2 border rounded-lg w-1/3">
+            </div>
+
+            <!-- Settings Card -->
+            <div class="bg-white mt-6 p-6 rounded-lg shadow-md">
+                <!-- Tabs -->
+                <div class="flex border-b">
+                    <button class="px-4 py-2 border-b-2 border-teal-500 text-teal-500 font-semibold">Account</button>
+                    <a href="11.html"><button class="px-4 py-2 text-gray-500 hover:text-teal-500">Security</button></a>
+                </div>
+
+                <!-- Profile Information -->
+                <div class="flex justify-between mt-6">
+                    <div>
+                        <p class="text-gray-700 font-semibold">Full Name</p>
+                        <p class="text-lg">PATEL DEVANG</p>
+
+                        <p class="text-gray-700 font-semibold mt-4">Email</p>
+                        <p class="text-lg">2301031000057@silveroakuni.ac.in</p>
+
+                        <p class="text-gray-700 font-semibold mt-4">Username</p>
+                        <p class="text-lg">DEVANG2822</p>
+
+                        <p class="text-gray-700 font-semibold mt-4">Phone Number</p>
+                        <p class="text-lg">+91 9999999999</p>
+
+                        <button class="mt-6 px-4 py-2 bg-blue-500 text-white rounded-lg">Update Profile</button>
+                    </div>
+
+                    <!-- Profile Picture -->
+                    <div class="text-center">
+                        <p class="text-gray-700 font-semibold">Your Profile Picture</p>
+                        <img src="https://via.placeholder.com/100" alt="Profile" class="w-24 h-24 rounded-full mt-2">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
